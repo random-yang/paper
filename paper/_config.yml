@@ -1,0 +1,26 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/index.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/paper.js
+
+social:
+  Github: https://github.com/OfficialYoungX
+  Codepen: https://codepen.io/De-Coder
+  Dribbble: https://dribbble.com/De_Coder
+  twitter: https://twitter.com/JHWviuDZH8bcvuM
+  知乎: https://www.zhihu.com/people/YCM-L-RR
+  掘金: https://juejin.im/user/5a26acea51882531926e9502

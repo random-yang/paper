@@ -1,0 +1,28 @@
+
+- var pageTitle = page.title || config.subtitle || ''
+- if (is_archive()) pageTitle = 'Archives'
+- if (is_tag()) pageTitle = 'Tag: ' + page.tag
+- if (is_category()) pageTitle = 'Category: ' + page.category
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+- if (is_year()) pageTitle += ': ' + page.year
+- pageTitle += ' [ ' + config.title + ' ]'
+
+doctype html
+html(lang=config.language)
+  head
+    meta(charset='UTF-8')
+    title= pageTitle
+    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+      //- stylesheets list from _config.yml
+      each url in theme.stylesheets
+        link(rel='stylesheet', href=url)
+  body
+    include ./head
+    .paper-container
+      include ./horizontal-line
+      block content
+      include ./horizontal-line
+      include ./paginator.pug
+    include ./footer
+    
+    

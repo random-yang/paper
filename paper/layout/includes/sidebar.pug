@@ -1,0 +1,19 @@
+.sidebar
+  //- 默认参数 true
+  if theme.link === undefind || theme.link === true
+    h2 Links
+    .sidebar__link
+      ul
+        each url,label in theme.social
+          li 
+            a(href=url_for(url)) #{label}
+
+  if theme.archives === undefind || theme.archives === true
+    h2 Archives
+    .sidebar__archives
+      != list_archives({type:"yearly", format: "YYYY", show_count: false})
+
+  if theme.tags === undefind || theme.tags === true
+    h2 Tags
+    .sidebar__tags
+      != list_tags({show_count: false})
