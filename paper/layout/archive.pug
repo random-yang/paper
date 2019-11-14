@@ -1,13 +1,6 @@
-
-extends includes/layout.pug
+extends ./includes/layout.pug
 
 block content
   .archive-view
-    - var categoriesList = list_categories({ show_count: false })
-    - var tagsList = list_tags({ show_count: false })
-    - var archivesList = list_archives({ show_count: false })
-    
-    include ./includes/main.pug
-  include includes/paginator.pug
-  
+    include includes/main.pug
   

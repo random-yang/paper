@@ -1,5 +1,5 @@
 
-- var pageTitle = page.title || config.subtitle || ''
+- let pageTitle = page.title || config.subtitle || ''
 - if (is_archive()) pageTitle = 'Archives'
 - if (is_tag()) pageTitle = 'Tag: ' + page.tag
 - if (is_category()) pageTitle = 'Category: ' + page.category
@@ -37,11 +37,7 @@ html(lang=config.language)
   body
     include ./head
     .paper-container
-      include ./horizontal-line
-      block left
-      block right
-      include ./horizontal-line
-      block bottom
+      block content
     include ./footer
       
     

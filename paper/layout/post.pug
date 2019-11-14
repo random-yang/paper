@@ -1,13 +1,20 @@
-extends includes/layout.pug
+extends ./includes/layout.pug
 include ./mixins/postItem.pug
 
 block content
-  .post-view
-    article.post-view__article
-      .article__infomation
-        - var post = { date: page.date, tags: page.tags, title: page.title, path: ''}
-        +postItem(post)
-      .article__content
-        != page.content
-    .post-view__sidebar
-      include includes/sidebar.pug
+  .main
+    include includes/horizontal-line
+    .main__2-col
+      article.post-view__article
+        .article__infomation
+          - const post = { date: page.date, tags: page.tags, title: page.title, path: ''}
+          +postItem(post)
+        .article__content
+          != page.content
+      .post-view__sidebar
+        include includes/sidebar.pug
+    include includes/horizontal-line
+    .main__bottom
+      include includes/pre-next.pug
+
+  

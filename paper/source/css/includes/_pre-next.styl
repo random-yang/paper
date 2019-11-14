@@ -1,0 +1,33 @@
+.pre-next
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 3.5rem 1rem
+  .pre-button, .next-button
+    text-size(s-1)
+    color: $color-gray
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      width: 1.5em
+      height: 1.5em
+      background-image: url(../img/icon-left-arrow.svg)
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+
+  .pre-button
+    padding-left: 2em
+    &::before
+      left: 0
+      transform: translateY(-50%)
+
+  .next-button
+    padding-right: 2em
+    &::before
+      right: 0
+      transform: translateY(-50%) scale(-1)
+
+    
