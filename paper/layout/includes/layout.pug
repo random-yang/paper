@@ -29,16 +29,18 @@ html(lang=config.language)
           },0)
           // smooth scroll
           if(window.Scrollbar && screen && screen.width > 1080) {
-            window.Scrollbar.init(document.querySelector('html'), { damping: 0.22 })
+            window.Scrollbar.init(document.querySelector('.scrollbar'), { damping: 0.22 })
           }
           // if moble, don't smooth scroll
         })
         
   body
-    include ./head
-    .paper-container
-      block content
-    include ./footer
+    .mask-border
+    .scrollbar
+      include ./head
+      .paper-container
+        block content
+      include ./footer
       
     
     

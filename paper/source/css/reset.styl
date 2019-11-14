@@ -1,4 +1,4 @@
-*
+*,*::before,*::after
   margin: 0
   padding: 0
   box-sizing: border-box
@@ -10,10 +10,37 @@ html
 
 body
   width: 100%
+  height: 100%
   font-family: $font-family
   background: $color-white
-  border: 1.5rem solid $color-yellow
-  font-smooth: auto
+  color: $color-black
+  -webkit-font-smoothing: antialiased
 
 a
   color: $color-black
+
+.scrollbar
+  height: 100%
+
+.mask-border
+  position: relative
+  z-index: 1
+  pointer-events: none
+  &::before
+    content: ''
+    width: 100vw
+    height: 100vh
+    border: 1.4rem $color-yellow solid
+    position: fixed
+    top: 0
+    left: 0
+
+::selection
+  color: $color-white
+  background: $color-black
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.4)
+
+@media screen and (max-width: $L)
+  .mask-border
+    &::before
+      border: 0.8rem $color-yellow solid
