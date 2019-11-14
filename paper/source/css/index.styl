@@ -2,6 +2,7 @@
 @import "var"
 @import "reset"
 @import "font"
+@import "post"
 
 @import "./includes/_footer"
 @import "./includes/_head"
@@ -14,6 +15,23 @@
 body
   width: 100%
   font-family: $font-family
-  background: $color-yellow-white
+  background: $color-white
   border: 1.5rem solid $color-yellow
+  font-smooth: auto
+
+/* custom scrollbar */
+/* width */
+// ::-webkit-scrollbar
+//   width: 8px
+
+// /* Track */
+// ::-webkit-scrollbar-track
+//   background: $color-yellow
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb
+//   // background: darken($color-yellow, 50%)
+//   background: $color-black
+
+
 

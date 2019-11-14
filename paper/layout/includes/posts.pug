@@ -1,12 +1,10 @@
-if page.posts.length > 0
+include ../mixins/postItem.pug
+
+if page.posts && page.posts.length > 0
   .posts
     each post in page.posts.sort('date', -1).toArray()
-      .posts__item
-        h2
-          a(href=url_for(post.path)) #{post.title}
-        if post.date
-          span.post__date #{date(post.date, date_format)}
-        if post.tags && post.tags.data && post.tags.data.length > 0
-          each tag in post.tags.data
-            a(href=url_for(tag.path))
-              span.post__tags #{`#${tag.name}`}
+      +postItem(post)
+      
+
+  
+  

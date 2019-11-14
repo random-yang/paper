@@ -16,6 +16,15 @@ html(lang=config.language)
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from _config.yml
+      each url in theme.scripts
+        script(src=url)
+      //- highlight
+      script.
+        setTimeout(function() {
+          hljs.initHighlighting()
+        },0)
   body
     include ./head
     .paper-container
@@ -24,5 +33,6 @@ html(lang=config.language)
       include ./horizontal-line
       include ./paginator.pug
     include ./footer
+      
     
     

@@ -1,5 +1,5 @@
 .posts
-  padding: 0 1rem
+  padding: 0 2rem
  
 .posts__item
   padding: 2.4rem 0
@@ -17,6 +17,7 @@
 .post__tags, .post__date
   position: relative
   text-size('s-1')
+  display: inline-block
   &::before
     content: ''
     background-position: center 
@@ -25,8 +26,9 @@
     width: 1em
     height: 1em
     position: absolute
-    top: 0
+    top: 50%
     left: 0
+    transform: translateY(-50%)
 
 .post__date
   padding-left: 1.4em
@@ -37,5 +39,11 @@
 .post__tags
   padding-left: 1.4em
   padding-right: 0.8em
+  text-decoration: underline
   &::before
     background-image: url(../img/icon-tag.svg)
+
+.posts__item__excerpt
+  text-size(s-1)
+  margin: 2rem 0 0 0
+  color: $color-gray

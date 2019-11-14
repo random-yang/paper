@@ -12,10 +12,11 @@ menu:
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/index.css
-
+- https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css
 # scripts loaded in the end of the body
 scripts:
 - /js/paper.js
+- http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js
 
 social:
   Github: https://github.com/OfficialYoungX

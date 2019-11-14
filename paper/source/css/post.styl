@@ -1,0 +1,61 @@
+.post-view
+  height: 100%
+  display: grid
+  grid-template-columns: auto 30rem
+
+.post-view__article
+  padding: 0 2rem 6rem 2rem
+  overflow-x: hidden
+
+article.post-view__article
+  .article__content
+    h1,h2,h3,h4,h5,h6,p
+      margin: 1em 0
+    h1,h2
+      text-size(m-3)
+    h3
+      text-size(m-2)
+    h4,h5
+      text-size(m-1)
+    h6
+      text-size(s-3)
+    p
+      text-size(s-2)
+      font-weight: 300
+
+    blockquote
+      border-left: 2px solid $color-black
+      padding: 0em 2rem
+
+    code
+      text-size(s-1)
+      font-weight: bold
+      .gutter
+        width: 2em
+        text-align: center
+        color: $color-yellow-white
+        background: $color-gray
+
+    code.hljs
+      overflow-x: scroll
+      max-width: 80rem
+      margin: 2rem 0
+
+    code:not(.hljs)
+      background: $color-yellow-white
+      border-radius: 4px
+      padding: 0.4em
+      margin: 0.4em
+      
+
+    ul,ol
+      text-size(s-2)
+      font-weight: 300
+      padding-left: 2em
+      li
+        padding: 0.2em 0
+
+    img 
+      width: 100%
+      max-width: 80rem
+      margin: 2rem 0

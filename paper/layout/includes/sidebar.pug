@@ -13,6 +13,11 @@
     .sidebar__archives
       != list_archives({type:"yearly", format: "YYYY", show_count: false})
 
+  if theme.categories === undefind || theme.categories === true
+    h2 Categories
+    .sidebar__archives
+      != list_categories()
+
   if theme.tags === undefind || theme.tags === true
     h2 Tags
     .sidebar__tags
