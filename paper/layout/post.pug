@@ -5,7 +5,7 @@ block content
   .post-view
     article.post-view__article
       .article__infomation
-        - var post = { date: page.date, tags: page.tags, title: page.title }
+        - var post = { date: page.date, tags: page.tags, title: page.title, path: ''}
         +postItem(post)
       .article__content
         != page.content

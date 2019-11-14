@@ -20,18 +20,28 @@ html(lang=config.language)
       //- scripts list from _config.yml
       each url in theme.scripts
         script(src=url)
-      //- highlight
       script.
-        setTimeout(function() {
-          hljs.initHighlighting()
-        },0)
+        
+        window.addEventListener('DOMContentLoaded', function() {
+          // highlight
+          setTimeout(function() {
+            hljs.initHighlighting()
+          },0)
+          // smooth scroll
+          if(window.Scrollbar && screen && screen.width > 1080) {
+            window.Scrollbar.init(document.querySelector('html'), { damping: 0.22 })
+          }
+          // if moble, don't smooth scroll
+        })
+        
   body
     include ./head
     .paper-container
       include ./horizontal-line
-      block content
+      block left
+      block right
       include ./horizontal-line
-      include ./paginator.pug
+      block bottom
     include ./footer
       
     

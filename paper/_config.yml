@@ -16,6 +16,7 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/paper.js
+- /js/lib/smooth-scrollbar.js
 - http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js
 
 social:
