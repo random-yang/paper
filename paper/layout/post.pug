@@ -1,9 +1,11 @@
 extends ./includes/layout.pug
 include ./mixins/postItem.pug
+include ./mixins/horizontalLine.pug
+
 
 block content
   .main
-    include includes/horizontal-line
+    include ./includes/location-bar.pug
     .main__2-col
       article.post-view__article
         .article__infomation
@@ -13,7 +15,7 @@ block content
           != page.content
       .post-view__sidebar
         include includes/sidebar.pug
-    include includes/horizontal-line
+    +horizontalLine('1px')    
     .main__bottom
       include includes/pre-next.pug
 

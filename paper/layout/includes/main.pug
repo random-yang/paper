@@ -1,10 +1,11 @@
 //- mian 是 posts列表页的框架
+include ../mixins/horizontalLine.pug
 
 .main
-  include ./horizontal-line
+  include ./location-bar.pug
   .main__2-col
     include ./posts.pug
     include ./sidebar.pug
-  include ./horizontal-line
+  +horizontalLine('1px')
   .main__bottom
     include ./paginator.pug
