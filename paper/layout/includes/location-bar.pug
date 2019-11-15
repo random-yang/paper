@@ -1,11 +1,12 @@
 include ../mixins/horizontalLine.pug
 
+//- globle: pageTitle {String}
+
 .location-bar
   .line-1
     +horizontalLine('3px')
   .line-2
     +horizontalLine('1px')
-  - const locationStr = page.path.trim().split('/').filter(item => item !== "").join(' > ')
-  p.text= locationStr
+  p.text= getPageTitle()
   .line-3
     +horizontalLine('1px')

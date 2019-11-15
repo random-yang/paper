@@ -1,17 +1,25 @@
-
-- let pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
-- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
-- if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' [ ' + config.title + ' ]'
+- let getPageTitle = (function() {
+-   let pageTitle = ''
+-   return function() {
+-     if(pageTitle) {
+-       return pageTitle
+-     }
+-     pageTitle = page.title || config.subtitle || ''
+-     if (is_archive()) pageTitle = 'Archive'
+-     if (is_tag()) pageTitle = 'Tag: ' + page.tag
+-     if (is_category()) pageTitle = 'Category: ' + page.category
+-     if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+-     if (is_year()) pageTitle += ': ' + page.year
+-     pageTitle += ' [ ' + config.title + ' ]'
+-     return pageTitle
+-   }
+- })()
 
 doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
-    title= pageTitle
+    title= getPageTitle()
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
@@ -29,9 +37,10 @@ html(lang=config.language)
           },0)
           // smooth scroll
           if(window.Scrollbar && screen && screen.width > 1080) {
-            window.Scrollbar.init(document.querySelector('.scrollbar'), { damping: 0.22 })
+            const { Scrollbar } = window
+            Scrollbar.init(document.querySelector('.scrollbar'), { damping: 0.22 })
           }
-          // if moble, don't smooth scroll
+          // if mobile, don't smooth scroll
         })
         
   body
