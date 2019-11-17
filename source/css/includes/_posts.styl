@@ -1,6 +1,6 @@
 .posts
   padding: 0 2rem
- 
+
 .posts__item
   padding: 2.4rem 0
   border-bottom: 1px solid lighten($color-gray, 70%)
@@ -20,7 +20,7 @@
   display: inline-block
   &::before
     content: ''
-    background-position: center 
+    background-position: center
     background-size: contain
     background-repeat: no-repeat
     width: 1em
@@ -47,3 +47,8 @@
   text-size(s-1)
   margin: 2rem 0 0 0
   color: $color-gray
+
+@media screen and (max-width: $M)
+  .posts__item
+    h2
+      text-size(m-3)

@@ -1,10 +1,12 @@
 .pre-next
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
   align-items: center
   padding: 5.5rem 3.5rem
   .pre-button, .next-button
     text-size(s-1)
+    padding: 1em
     position: relative
     &::before
       content: ''
@@ -29,4 +31,8 @@
       right: 0
       transform: translateY(-50%) scale(-1)
 
-    
+
+@media screen and (max-width: $M)
+  .pre-next
+    justify-content: center
+

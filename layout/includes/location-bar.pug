@@ -1,12 +1,22 @@
 include ../mixins/horizontalLine.pug
 
-//- globle: getPageTitle {Function}
+- let getLocation = function() {
+-   let location = '首页'
+-   if (is_post()) location = page.title
+-   if (is_archive()) location = 'Archive'
+-   if (is_year()) location += ': ' + page.year
+-   if (is_month()) location += ': ' + page.month + '/' + page.year
+-
+-   if (is_tag()) location = 'Tag: ' + page.tag
+-   if (is_category()) location = 'Category: ' + page.category
+-   return location
+- }
 
 .location-bar
   .line-1
     +horizontalLine('3px')
   .line-2
     +horizontalLine('1px')
-  p.text= getPageTitle()
+  p.text= getLocation()
   .line-3
     +horizontalLine('1px')

@@ -1,19 +1,14 @@
-- let getPageTitle = (function() {
--   let pageTitle = ''
--   return function() {
--     if(pageTitle) {
--       return pageTitle
--     }
--     pageTitle = page.title || config.subtitle || ''
+- let getPageTitle = function() {
+-     let pageTitle = ''
+-     if (is_post()) pageTitle = page.title
 -     if (is_archive()) pageTitle = 'Archive'
 -     if (is_tag()) pageTitle = 'Tag: ' + page.tag
 -     if (is_category()) pageTitle = 'Category: ' + page.category
 -     if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 -     if (is_year()) pageTitle += ': ' + page.year
--     pageTitle += ' [ ' + config.title + ' ]'
+-     pageTitle += ' [ ' + config.title + ' ] '
 -     return pageTitle
--   }
-- })()
+- }
 
 doctype html
 html(lang=config.language)
@@ -29,7 +24,7 @@ html(lang=config.language)
       each url in theme.scripts
         script(src=url)
       script.
-        
+
         window.addEventListener('DOMContentLoaded', function() {
           // highlight
           setTimeout(function() {
@@ -42,7 +37,7 @@ html(lang=config.language)
           }
           // if mobile, don't smooth scroll
         })
-        
+
   body
     .mask-border
     .scrollbar
@@ -50,6 +45,6 @@ html(lang=config.language)
       .paper-container
         block content
       include ./footer
-      
-    
-    
+
+
+
