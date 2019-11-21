@@ -18,29 +18,3 @@ body
 
 a
   color: $color-black
-
-.scrollbar
-  height: 100%
-
-.mask-border
-  position: relative
-  z-index: 1
-  pointer-events: none
-  &::before
-    content: ''
-    width: 100vw
-    height: 100vh
-    border: 1.4rem $color-yellow solid
-    position: fixed
-    top: 0
-    left: 0
-
-::selection
-  color: $color-white
-  background: $color-black
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.4)
-
-@media screen and (max-width: $L)
-  .mask-border
-    &::before
-      border: 0.8rem $color-yellow solid

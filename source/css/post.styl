@@ -18,7 +18,6 @@ article.post-view__article
       text-size(s-3)
     p
       text-size(s-2)
-    //   font-weight: 300
 
     blockquote
       border-left: 2px solid $color-black
@@ -26,7 +25,6 @@ article.post-view__article
 
     code
       text-size(s-1)
-      font-weight: bold
       .gutter
         width: 2em
         text-align: center
@@ -39,6 +37,7 @@ article.post-view__article
       margin: 2rem 0
 
     code:not(.hljs)
+      font-weight: bold
       background: darken($color-yellow-white, 5%)
       border-radius: 4px
       padding: 0.2rem 0.4em
@@ -47,12 +46,11 @@ article.post-view__article
 
     ul,ol
       text-size(s-2)
-      // font-weight: 300
       padding-left: 2em
       li
         padding: 0.2em 0
 
     img
-      width: 100%
-      max-width: 80rem
+      width: auto
+      max-width: 100%
       margin: 2rem 0

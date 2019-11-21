@@ -5,7 +5,7 @@
     .sidebar__link
       ul
         each url,label in theme.social
-          li 
+          li
             a(href=url_for(url)) #{label}
 
   if theme.archives === undefind || theme.archives === true
@@ -15,8 +15,8 @@
 
   if theme.categories === undefind || theme.categories === true
     h2 Categories
-    .sidebar__archives
-      != list_categories()
+    .sidebar__categories
+      != list_categories({show_count: false})
 
   if theme.tags === undefind || theme.tags === true
     h2 Tags
