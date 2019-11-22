@@ -18,7 +18,7 @@ label
   position: absolute;
   top: 4rem;
   right: 2rem;
-  z-index: 10;
+  z-index: 1;
   transform: rotate(90deg);
 
 label:after
@@ -32,7 +32,7 @@ label:after
   position: absolute;
   top: 0.5rem;
   left: 0.4rem;
-  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+  transition: 300ms ease-in-out;
 
 input:checked + label:after
   left: calc(100% - 5px);

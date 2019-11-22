@@ -1,0 +1,16 @@
+.darkmode-mask
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 10;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+  &--dark
+    visibility: visible;
+    opacity: 1;
