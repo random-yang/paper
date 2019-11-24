@@ -23,6 +23,7 @@ Darkmode.prototype.turnOffDarkmode = function() {
 
 
 window.addEventListener('DOMContentLoaded', () => {
+  // darkmode
   const checkbox = document.querySelector('input[name=mode]')
   const darkmode = new Darkmode()
   checkbox.addEventListener('change', function() {
@@ -32,4 +33,21 @@ window.addEventListener('DOMContentLoaded', () => {
       darkmode.turnOffDarkmode()
     }
   })
+
+  // sidebar
+  ;(function() {
+    let toggle = true
+    const sidebar = document.querySelector('.sidebar')
+    const sidebarButton = document.querySelector('.sidebar__button')
+    sidebar.addEventListener('touchmove', function(e) {
+      e.stopPropagation()
+    })
+
+    sidebarButton.addEventListener('click', function() {
+      toggle ? sidebar.classList.add('sidebar--expend') : sidebar.classList.remove('sidebar--expend')
+      toggle ? sidebarButton.classList.add('sidebar__button--expend') : sidebarButton.classList.remove('sidebar__button--expend')
+
+      toggle = !toggle
+    })
+  })()
 })

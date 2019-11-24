@@ -14,8 +14,6 @@ stylesheets:
 - /css/index.css
 - /css/hljs.css
 # - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css
-- https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap
-- https://fonts.googleapis.com/css?family=Alata&display=swap
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap
 
 # scripts loaded in the end of the body
@@ -31,3 +29,5 @@ social:
   twitter: https://twitter.com/JHWviuDZH8bcvuM
   知乎: https://www.zhihu.com/people/YCM-L-RR
   掘金: https://juejin.im/user/5a26acea51882531926e9502
+
+# theme_color: \

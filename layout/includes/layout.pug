@@ -14,7 +14,7 @@ doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
-    meta(width='device-width', initial-scale=1, user-scalable='no')
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0")
     title= getPageTitle()
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
@@ -41,12 +41,12 @@ html(lang=config.language)
   body
     .mask-border
     .scrollbar
-      include ./switch-button
       include ./head
       .paper-container
         block content
       include ./footer
     include ./darkmode-mask
+    .sidebar__button
 
 
 

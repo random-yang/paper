@@ -19,7 +19,46 @@
     li
       display: inline-block
       padding: 0 0.4em
-
-@media screen and (max-width: $M)
-  .sidebar
+  &__button
     display: none
+
+@media screen and (max-width: $S)
+  .sidebar
+    width: 100%
+    height: auto
+    max-height: 100vh
+    position: fixed
+    top: 0
+    right: 0
+    padding: 4rem
+    margin: 0
+    overflow-y: scroll
+    background: $color-yellow-white
+    z-index: 2
+    transition: transform 0.3s ease-in-out
+    transform: translateY(-100%)
+
+    &--expend
+      transform: translateY(0)
+
+    &__button
+      display: block
+      width: 3rem
+      height 3rem
+      background: $color-yellow
+      background-image: url(../../img/icon-expend.svg)
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+      position: fixed
+      top: 0.8rem
+      right: 3rem
+      z-index: 5
+      &--expend
+        background-image: url(../../img/icon-close.svg)
+
+
+
+
+
+
