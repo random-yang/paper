@@ -13,12 +13,11 @@ menu:
 stylesheets:
 - /css/index.css
 - /css/hljs.css
-# - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css
+- https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap
 
 # scripts loaded in the end of the body
 scripts:
-- /js/lib/smooth-scrollbar.js
 - http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js
 - /js/paper.js
 
@@ -30,4 +29,11 @@ social:
   知乎: https://www.zhihu.com/people/YCM-L-RR
   掘金: https://juejin.im/user/5a26acea51882531926e9502
 
-# theme_color: \
+# sidebar
+# link: false
+# archives: false
+# categories: false
+# tags: false
+
+# theme color
+main_color: grass # forest | grass | sky | sun | sea

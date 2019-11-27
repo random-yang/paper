@@ -24,19 +24,6 @@ html(lang=config.language)
       //- scripts list from _config.yml
       each url in theme.scripts
         script(src=url)
-      script.
-        window.addEventListener('DOMContentLoaded', function() {
-          // highlight
-          setTimeout(function() {
-            hljs.initHighlighting()
-          },0)
-          // smooth scroll
-          //- if(window.Scrollbar && screen && screen.width > 1080) {
-          //-   const { Scrollbar } = window
-          //-   Scrollbar.init(document.querySelector('.scrollbar'), { damping: 0.22 })
-          //- }
-          // if mobile, don't smooth scroll
-        })
 
   body
     .mask-border

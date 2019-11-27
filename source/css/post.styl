@@ -1,7 +1,7 @@
 .post-view
 
 .post-view__article
-  padding: 0 2rem 6rem 2rem
+  padding: 0rem 2rem 6rem 2rem
   overflow-x: hidden
 
 article.post-view__article
@@ -29,7 +29,7 @@ article.post-view__article
       .gutter
         width: 2em
         text-align: center
-        color: $color-yellow-white
+        color: $color-main-white
         background: $color-gray
 
     code.hljs
@@ -39,10 +39,12 @@ article.post-view__article
 
     code:not(.hljs)
       font-weight: bold
-      background: darken($color-yellow-white, 5%)
+      background: $color-auxiliary
       border-radius: 4px
       padding: 0.2rem 0.4em
       margin: 0.4em
+      vertical-align:middle;
+      display:inline-block;
 
 
     ul,ol
@@ -55,3 +57,7 @@ article.post-view__article
       width: auto
       max-width: 100%
       margin: 2rem 0
+
+@media screen and (max-width: $M)
+  .post-view__article
+    padding: 0rem 1rem 6rem 1rem

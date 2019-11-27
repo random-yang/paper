@@ -2,8 +2,23 @@
 $rem = 62.5%
 
 // colors
-$color-yellow = #EFD17A
-$color-yellow-white = #F6F5F1
+
+if hexo-config("main_color") == "default"
+  $color-main = #EFD17A
+else if hexo-config("main_color") == "forest"
+  $color-main = #6ba8a9
+else if hexo-config("main_color") == "grass"
+  $color-main = #9dab86
+else if hexo-config("main_color") == "sky"
+  $color-main = #9be3de
+else if hexo-config("main_color") == "sun"
+  $color-main = #ffa259
+else if hexo-config("main_color") == "sea"
+  $color-main = #46b3e6
+
+$color-auxiliary = lighten($color-main, 80%)
+
+$color-main-white = #F6F5F1
 $color-black = #222222
 $color-gray = #929292
 $color-light-gray = #cccccc
