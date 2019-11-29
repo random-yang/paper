@@ -11,29 +11,29 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/index.css
-- /css/hljs.css
-- https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css
-- https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap
+- /css/index.css # for main css
+- https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
+- https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
 
 # scripts loaded in the end of the body
 scripts:
-- http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js
-- /js/paper.js
+- http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js # for highlight
+- /js/paper.js # for basic script
 
 social:
-  Github: https://github.com/OfficialYoungX
-  Codepen: https://codepen.io/De-Coder
-  Dribbble: https://dribbble.com/De_Coder
-  twitter: https://twitter.com/JHWviuDZH8bcvuM
-  知乎: https://www.zhihu.com/people/YCM-L-RR
-  掘金: https://juejin.im/user/5a26acea51882531926e9502
+  Github: https://github.com/yours
+  Codepen: https://codepen.io/yours
+  Dribbble: https://dribbble.com/yours
+  twitter: https://twitter.com/yours
+  知乎: https://www.zhihu.com/people/yours
+  掘金: https://juejin.im/user/yours
+  # and more, you can add other link by the same way
 
-# sidebar
+# Uncomment to disable sidebar
 # link: false
 # archives: false
-# categories: false
+categories: false
 # tags: false
 
 # theme color
-main_color: grass # forest | grass | sky | sun | sea
+main_color: default # forest | grass | sky | sun | sea

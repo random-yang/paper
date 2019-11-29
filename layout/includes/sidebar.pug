@@ -3,10 +3,11 @@
   if theme.link === undefind || theme.link === true
     h2 Links
     .sidebar__link
-      ul
-        each url,label in theme.social
-          li
-            a(href=url_for(url)) #{label}
+      if theme.social
+        ul
+          each url,label in theme.social
+            li
+              a(href=url_for(url)) #{label}
 
   if theme.archives === undefind || theme.archives === true
     h2 Archives
