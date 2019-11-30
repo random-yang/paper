@@ -2,7 +2,7 @@
 
 <p align="center">🎨 paper 是一个简洁，没有过多冗余视觉元素和功能的 hexo 主题，其设计风格的灵感来源于📰 <strong>报纸</strong>等纸质读物。而且主题以一种💡<strong>极其巧妙</strong>的方式实现了当下(2019)流行的🌗<strong>Dark Mode</strong>，一键可开启。</p>
 
-![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase-min.png)
+<!-- ![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase-min.png) -->
 
 ## 如何使用
 #### 安装
@@ -68,11 +68,11 @@ main_color: default # forest | grass | sky | sun | sea
 
 ## 效果预览
 - DarkMode
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-3-min.png)
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-3-min.png) -->
 
 - multiple colors
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-4-min.png)
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-4-min.png) -->
 
 - Resposive
-  ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-1-min.png)
-  ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-2-min.png)
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-1-min.png) -->
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-2-min.png) -->
