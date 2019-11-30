@@ -76,3 +76,10 @@ main_color: default # forest | grass | sky | sun | sea
 - Resposive
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-1.png)
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-2.png)
+
+## Todo
+- [ ] 移植到其他的博客平台(设计是可复的)
+- [ ] 更具情况看是否添加评论系统(根据对实际情况的考察，绝大多数时候Blog单独的评论系统是不必要的)
+
+## LICENCE
+MIT
