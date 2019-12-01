@@ -1,4 +1,4 @@
-<h1 align="center">paper</h1>
+<h1 align="center"><img src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-logo.png" width="40px" style="padding-right:10px"></img>paper</h1>
 
 <p align="center">🎨 paper 是一个简洁，没有过多冗余视觉元素和功能的 hexo 主题，其设计风格的灵感来源于📰 <strong>报纸</strong>等纸质读物。而且主题以一种💡<strong>极其巧妙</strong>的方式实现了当下(2019)流行的🌗<strong>Dark Mode</strong>，一键可开启。</p>
 
@@ -79,7 +79,11 @@ main_color: default # forest | grass | sky | sun | sea
 
 ## Todo
 - [ ] 移植到其他的博客平台(设计是可复用的)
-- [ ] 更具情况看是否添加评论系统(根据对实际情况的考察，绝大多数时候Blog单独的评论系统是不必要的)
+- [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
+- [ ] 数据统计
+
+## 参与
+我个人也看了很多的其他主题，发现很多都有很丰富的功能。由于个人的精力有限，对于该主题只实现了主要的基本功能，满足了自己对于视觉方面的基本要求。其他更多功能或者是视觉细节的建议，欢迎pr、issue🤟🏼.
 
 ## LICENCE
 MIT
