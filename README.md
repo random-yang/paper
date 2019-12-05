@@ -14,7 +14,7 @@ git clone git@github.com:OfficialYoungX/paper.git
 ```
 
 ```bash
-# 在你的 _config,yml 文件中设置
+# 在你的 _config.yml 文件中设置
 theme: paper
 # 同时为了代码高亮，你需要将下面的内容粘贴到该文件
 highlight:
