@@ -12,11 +12,15 @@ cd theme
 # clone 该项目
 git clone git@github.com:OfficialYoungX/paper.git
 ```
-
+安装stylus和pug转换工具
+```
+npm install hexo-renderer-jade hexo-renderer-stylus --save
+```
+修改配置文件
 ```bash
-# 在你的 _config,yml 文件中设置
+# 在你的 _config.yml 文件中设置
 theme: paper
-# 同时为了代码高亮，你需要将下面的内容粘贴到该文件
+# 同时为了代码高亮，你需要将下面的内容粘贴到该文件（如果之前存在highlight字段，记得删除后再粘贴）
 highlight:
   hljs: true
   enable: true
