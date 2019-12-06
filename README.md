@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-logo.png" width="40px" style="padding-right:10px"></img>paper</h1>
+<h1 align="center">paper</h1>
 
 <p align="center">🎨 paper 是一个简洁，没有过多冗余视觉元素和功能的 hexo 主题，其设计风格的灵感来源于📰 <strong>报纸</strong>等纸质读物。而且主题以一种💡<strong>极其巧妙</strong>的方式实现了当下(2019)流行的🌗<strong>Dark Mode</strong>，一键可开启。</p>
 
@@ -12,7 +12,7 @@ cd theme
 # clone 该项目
 git clone git@github.com:OfficialYoungX/paper.git
 ```
-安装stylus和pug转换工具
+安装stylus和pug转换工具(由于 hexo init 后默认可能没有安装下面的两个)
 ```
 npm install hexo-renderer-jade hexo-renderer-stylus --save
 ```
