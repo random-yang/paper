@@ -24,13 +24,20 @@ Darkmode.prototype.turnOffDarkmode = function() {
 
 window.addEventListener('DOMContentLoaded', () => {
   // darkmode
-  const checkbox = document.querySelector('input[name=mode]')
   const darkmode = new Darkmode()
+  const { isDarkMode } = localStorage
+  const checkbox = document.querySelector('input[name=mode]')
+  if (JSON.parse(isDarkMode)) {
+    darkmode.turnOnDarkmode()
+    checkbox.checked = true
+  }
   checkbox.addEventListener('change', function() {
     if(this.checked) {
       darkmode.turnOnDarkmode()
+      localStorage.setItem('isDarkMode', true)
     } else {
       darkmode.turnOffDarkmode()
+      localStorage.setItem('isDarkMode', false)
     }
   })
 
