@@ -17,7 +17,7 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-- http://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js # for highlight
+- https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js # for highlight
 - /js/paper.js # for basic script
 
 social:
