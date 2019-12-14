@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const darkmode = new Darkmode()
   const { isDarkMode } = localStorage
   const checkbox = document.querySelector('input[name=mode]')
-  if (JSON.parse(isDarkMode)) {
+  if (isDarkMode && JSON.parse(isDarkMode)) {
     darkmode.turnOnDarkmode()
     checkbox.checked = true
   }
