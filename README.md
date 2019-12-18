@@ -81,6 +81,9 @@ main_color: default # forest | grass | sky | sun | sea
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-1.png)
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-2.png)
 
+## 移植版
+- [halo-theme-paper](https://github.com/halo-dev/halo-theme-paper)
+
 ## Todo
 - [ ] 移植到其他的博客平台(设计是可复用的)
 - [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
