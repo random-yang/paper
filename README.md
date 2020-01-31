@@ -81,6 +81,12 @@ main_color: default # forest | grass | sky | sun | sea
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-1.png)
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/paper-github-2.png)
 
+## update
+```bash
+cd themes/paper
+git pull
+```
+
 ## 移植版
 - [halo-theme-paper](https://github.com/halo-dev/halo-theme-paper)
 
