@@ -58,6 +58,23 @@ article.post-view__article
       max-width: 100%
       margin: 2rem 0
 
+    table
+      text-size(s-2)
+      border-spacing: 0
+      border-collapse: collapse
+      border-top: 2px $color-black solid
+      border-bottom: 2px $color-black solid
+      th,td
+        border: 1px $color-light-gray solid
+        padding: 0.3em 1em
+      th
+        border-bottom: 2px $color-black solid
+      td:last-child,th:last-child
+        border-right: none
+      td:first-child,th:first-child
+        border-left: none
+
+
 @media screen and (max-width: $M)
   .post-view__article
     padding: 0rem 1rem 6rem 1rem
