@@ -1,0 +1,26 @@
+
+.tocbot
+  overflow: hidden
+  position: -webkit-sticky
+  position: sticky
+  top: 1.4rem
+  background: $color-white
+  .toc__content
+    border-left: 1px solid #222
+    margin: 1.6rem 0 1.6rem 1rem
+  .toc-list
+    padding: 0 0 0 1em
+  .toc-link
+    text-decoration: none
+    &::before
+      width: 2px
+      left: 1rem
+
+  .is-active-link
+    &::before
+      background: $color-main
+
+
+@media screen and (max-width: $M)
+  .tocbot
+    position: static

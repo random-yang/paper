@@ -30,7 +30,7 @@ highlight:
 ```
 ```bash
 # 清空并重新编译
-hexo clear && hexo s
+hexo clean && hexo s
 # done
 # 在临时开启的本地server中你应该能看见应用了paper主题的blog！
 ```
@@ -64,6 +64,7 @@ main_color: default # forest | grass | sky | sun | sea
 
 ```bash
 # Uncomment to disable sidebar
+# toc: false
 # link: false
 # archives: false
 # categories: false
@@ -91,10 +92,10 @@ git pull
 - [halo-theme-paper](https://github.com/halo-dev/halo-theme-paper)
 
 ## Todo
-- [ ] 移植到其他的博客平台(设计是可复用的)
+- [x] 移植到其他的博客平台(设计是可复用的)
+- [x] 实时目录
 - [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
 - [ ] 数据统计
-- [ ] 实时目录
 - [ ] 优化排版和细分字体
 
 ## 参与
