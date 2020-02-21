@@ -1,5 +1,8 @@
 .sidebar
   //- 默认参数 true
+  if !page.posts && theme.toc
+    include ./toc
+
   if theme.link === undefind || theme.link === true
     h2 Links
     .sidebar__link

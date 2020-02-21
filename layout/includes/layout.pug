@@ -20,11 +20,6 @@ html(lang=config.language)
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
-    if theme.scripts !== undefined && theme.scripts.length > 0
-      //- scripts list from _config.yml
-      each url in theme.scripts
-        script(src=url)
-
   body
     .mask-border
     .scrollbar
@@ -34,6 +29,11 @@ html(lang=config.language)
       include ./footer
     include ./darkmode-mask
     .sidebar__button
+
+  if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from _config.yml
+      each url in theme.scripts
+        script(src=url)
 
 
 
