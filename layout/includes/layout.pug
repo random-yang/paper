@@ -15,6 +15,17 @@ html(lang=config.language)
   head
     meta(charset='UTF-8')
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0")
+    //- customize chrome tab color
+    -
+      let colorMap = {
+        default: "#ebc65a",
+        forest: "#6ba8a9",
+        grass: "#9dab86",
+        sky: "#9be3de",
+        sun: "#ffa259",
+        sea: "#46b3e6"
+      }
+    meta(name="theme-color" content=colorMap[theme.main_color])
     title= getPageTitle()
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
