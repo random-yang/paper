@@ -27,16 +27,17 @@ social:
   Github: https://github.com/yours
   Codepen: https://codepen.io/yours
   Dribbble: https://dribbble.com/yours
-  twitter: https://twitter.com/yours
+  Twitter: https://twitter.com/yours
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
+  Mail: tomail:xxx@yourmail.xxxx
   # and more, you can add other link by the same way
 
 # Uncomment to disable sidebar
-toc: true
+# toc: false
 # link: false
 # archives: false
-categories: false
+# categories: false
 # tags: false
 
 # theme color

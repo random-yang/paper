@@ -1,6 +1,6 @@
 .sidebar
   //- 默认参数 true
-  if !page.posts && theme.toc
+  if !page.posts && (theme.toc === undefind || theme.toc === true)
     include ./toc
 
   if theme.link === undefind || theme.link === true

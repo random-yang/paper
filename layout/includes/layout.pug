@@ -41,10 +41,10 @@ html(lang=config.language)
     include ./darkmode-mask
     .sidebar__button
 
-  if theme.scripts !== undefined && theme.scripts.length > 0
+  if theme.scripts && theme.scripts.length > 0
       //- scripts list from _config.yml
       each url in theme.scripts
-        script(src=url)
+        script(src=url defer)
 
 
 
