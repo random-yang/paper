@@ -12,16 +12,18 @@ menu:
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/index.css # for main css
+stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
 - https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css # for toc basic style
 
 # scripts loaded in the end of the body
-scripts:
+scripts_defer:
 - https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js #for toc
 - https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js # for highlight
 - /js/paper.js # for basic script
-- /js/toc.js
+- /js/toc.js # for toc render
+
 
 social:
   Github: https://github.com/yours
