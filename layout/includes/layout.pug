@@ -27,24 +27,23 @@ html(lang=config.language)
       }
     meta(name="theme-color" content=colorMap[theme.main_color])
     title= getPageTitle()
-    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+    if theme.stylesheets && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
-  body
-    .mask-border
-    .scrollbar
-      include ./head
-      .paper-container
-        block content
-      include ./footer
-    include ./darkmode-mask
-    .sidebar__button
 
-  if theme.scripts && theme.scripts.length > 0
+    if theme.scripts && theme.scripts.length > 0
       //- scripts list from _config.yml
       each url in theme.scripts
         script(src=url defer)
+  body
+    .mask-border
+    include ./head
+    .paper-container
+      block content
+    include ./footer
+    include ./darkmode-mask
+    .sidebar__button
 
 
 

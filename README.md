@@ -48,6 +48,7 @@ social:
   twitter: https://twitter.com/yours
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
+  Mail: tomail:xxx@yourmail.xxxx
   # ...
   # and more, you can add other link by the same way
 ```
@@ -92,7 +93,7 @@ git pull
 - [halo-theme-paper](https://github.com/halo-dev/halo-theme-paper)
 
 ## Todo
-- [x] 移植到其他的博客平台(设计是可复用的)
+- [x] 移植到[其他的博客平台](##移植版)(设计是可复用的)
 - [x] 实时目录
 - [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
 - [ ] 数据统计
