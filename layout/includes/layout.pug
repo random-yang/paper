@@ -40,6 +40,8 @@ html(lang=config.language)
     if theme.scripts_defer && theme.scripts_defer.length > 0
       each url in theme.scripts_defer
         script(src=url defer)
+    include ./google-analytics
+
   body
     .mask-border
     include ./head
