@@ -1,3 +1,5 @@
+
+// dark mode utils
 const invertImgs = (function() {
   const invertImg = img => img.style.filter = img.style.filter !== "invert(100%)" ? "invert(100%)" : ""
   const invertImgs = imgs => Array.prototype.forEach.call(imgs, invertImg)
@@ -7,6 +9,8 @@ const invertImgs = (function() {
 function Darkmode() {
   this.mask = document.getElementById('darkmode-mask')
   this.imgs = document.getElementsByTagName('img')
+  this.metaThemeColor = document.querySelector('meta[name=theme-color]')
+  this.metaThemeColorCatch = ''
 }
 Darkmode.prototype.turnOnDarkmode = function() {
   // fix chrome bug
@@ -15,10 +19,15 @@ Darkmode.prototype.turnOnDarkmode = function() {
   // invert the images color
   // so that they can render with the right color
   invertImgs(this.imgs)
+
+  // set <meta name="theme-color" content="xxxx">
+  this.metaThemeColorCatch = this.metaThemeColor.content
+  this.metaThemeColor.setAttribute('content', '#333') // dark-mode tab color #333
 }
 Darkmode.prototype.turnOffDarkmode = function() {
   this.mask.classList.remove('darkmode-mask--dark');
   invertImgs(this.imgs)
+  this.metaThemeColor.content = this.metaThemeColorCatch
 }
 
 
@@ -46,18 +55,6 @@ window.addEventListener('DOMContentLoaded', () => {
     let toggle = true
     const sidebar = document.querySelector('.sidebar')
     const sidebarButton = document.querySelector('.sidebar__button')
-    sidebar.addEventListener('touchstart', function(e) {
-      document.body.style.overflow = 'hidden'
-    })
-
-    sidebar.addEventListener('touchmove', function(e) {
-      e.stopPropagation()
-    })
-
-    sidebar.addEventListener('touchend', function(e) {
-      document.body.style.overflow = 'scroll'
-    })
-
     sidebarButton.addEventListener('click', function() {
       toggle ? sidebar.classList.add('sidebar--expend') : sidebar.classList.remove('sidebar--expend')
       toggle ? sidebarButton.classList.add('sidebar__button--expend') : sidebarButton.classList.remove('sidebar__button--expend')
