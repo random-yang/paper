@@ -47,3 +47,6 @@ main_color: default # forest | grass | sky | sun | sea
 
 # google Analytics
 google_analytics_id: UA-151544816-1
+
+# home page post item image
+posts_item_image: true
