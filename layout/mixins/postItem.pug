@@ -1,8 +1,10 @@
 mixin postItem(post)
   if(post)
-    .posts__item
+    .posts-item
       h2
         a(href= post.path ? url_for(post.path) : '') #{post.title}
+      if post.image
+        .image
       if post.date
         span.post__date #{date(post.date, date_format)}
       if post.tags && post.tags.data && post.tags.data.length > 0
@@ -10,5 +12,5 @@ mixin postItem(post)
           a(href=url_for(tag.path))
             span.post__tags #{`#${tag.name}`}
       if post.excerpt
-        .posts__item__excerpt
+        .posts-item__excerpt
           != post.excerpt
