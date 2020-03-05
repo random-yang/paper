@@ -10,9 +10,24 @@
     a
       text-decoration: none
       box-shadow: inset 0 -0.3em 0 $color-main
-      transition:box-shadow .5s cubic-bezier(.71,0,0,.99)
-      &:hover
+      transition:box-shadow .5s cubic-bezier(.71, 0, 0, .99)
+  &:hover
+    h2
+      a
         box-shadow: inset 0 -0.8em 0 $color-main
+
+  .h2--sm-mb
+    margin-bottom: 0
+  &__image
+    width: 100%
+    height: 20rem
+    margin: 2.4rem 0
+    object-fit: cover
+
+  &__excerpt
+    text-size(s-1)
+    margin: 2rem 0 0 0
+    color: $color-black-3
 
 .post__tags, .post__date
   position: relative
@@ -42,11 +57,6 @@
   text-decoration: underline
   &::before
     background-image: url(../img/icon-tag.svg)
-
-.posts-item__excerpt
-  text-size(s-1)
-  margin: 2rem 0 0 0
-  color: $color-black-3
 
 @media screen and (max-width: $M)
   .posts

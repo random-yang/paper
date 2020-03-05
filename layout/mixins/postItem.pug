@@ -1,10 +1,11 @@
 mixin postItem(post)
   if(post)
     .posts-item
-      h2
-        a(href= post.path ? url_for(post.path) : '') #{post.title}
-      if post.image
-        .image
+      - let hasPhoto = post.photos && post.photos[0]
+      h2(class=hasPhoto ? "h2--sm-mb" : "")
+        a(href=post.path ? url_for(post.path) : '') #{post.title}
+      if hasPhoto
+        img.posts-item__image(src=post.photos[0] alt="post image")
       if post.date
         span.post__date #{date(post.date, date_format)}
       if post.tags && post.tags.data && post.tags.data.length > 0
