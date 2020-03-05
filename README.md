@@ -71,6 +71,29 @@ main_color: default # forest | grass | sky | sun | sea
 # categories: false
 # tags: false
 ```
+- posts 列表预览文章图片
+
+```bash
+# home page post item image
+posts_item_image: true
+```
+开启本项后，可以在文章markdown头部写：
+```bash
+photos:
+- your-images-url
+# The following pictures will be ignored
+# - ...
+# - ...
+```
+默认只取列表中的第一个url，后面的将被忽略。
+
+- google Analytics
+```bash
+# google Analytics
+google_analytics_id: xx-xxxxxxx-xx
+```
+
+
 
 ## 效果预览
 - DarkMode
@@ -96,11 +119,14 @@ git pull
 - [x] 移植到[其他的博客平台](##移植版)(设计是可复用的)
 - [x] 文章目录
 - [x] Chrome 移动端 tab color
-- [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
 - [x] Google Analytics
+- [x] 优化 SEO
+- [x] 优化[Audit](https://web.dev/measure/)测试性能
+- [x] home 页面的 posts 图片(参数可配置)
+- [ ] 文章置顶(最近才意识到置顶功能是十分重要的)
+- [ ] 根据情况看决定否添加评论系统(不是所有的Blog都需要评论系统)
+- [ ] 全局搜索
 - [ ] 优化排版和细分字体
-- [x] 优化SEO
-- [ ] 优化[Audit](https://web.dev/measure/)测试性能
 
 ## 参与
 我个人也看了很多的其他主题，发现很多都有很丰富的功能。由于个人的精力有限，对于该主题只实现了主要的基本功能，满足了自己对于视觉方面的基本要求。其他更多功能或者是视觉细节的建议，欢迎pr、issue🤟🏼.
