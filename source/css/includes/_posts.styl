@@ -1,23 +1,51 @@
 .posts
-  padding: 0 2rem
+  padding: 2rem
 
 .posts-item
-  padding: 2.4rem 0
+  padding: 1.4rem 1rem
+  margin: 1rem 0
   border-bottom: 1px solid lighten($color-gray, 70%)
-  h2
+  position: relative
+  background: $color-white
+  &--pintop
+    &::before
+      content: ''
+      width: 70%
+      height: 70%
+      position: absolute
+      top: 0
+      right: 0
+      box-shadow: 8px -8px 20px rgba(0,0,0,0.1)
+      transform-origin: 100% 0%
+      transform: skew(-5deg, -5deg)
+      z-index: -1
+    &::after
+      content: ''
+      position: absolute
+      top: -10px
+      right: -19px
+      width: 60px
+      height: 60px
+      background-image: url('../../img/paper-clip.png')
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+
+  &:hover
+    h2
+      a
+        box-shadow: inset 0 -0.8em 0 $color-main
+
+  &__title
     text-size(l-1)
     margin-bottom: 6rem
     a
       text-decoration: none
       box-shadow: inset 0 -0.3em 0 $color-main
       transition:box-shadow .5s cubic-bezier(.71, 0, 0, .99)
-  &:hover
-    h2
-      a
-        box-shadow: inset 0 -0.8em 0 $color-main
+    &--image
+      margin-bottom: 0
 
-  .h2--sm-mb
-    margin-bottom: 0
   &__image
     width: 100%
     height: 20rem
@@ -62,8 +90,11 @@
 
 @media screen and (max-width: $M)
   .posts
-    padding: 0 1rem
+    padding: 1rem
   .posts-item
-    h2
+    &__title
       text-size(m-3)
       margin-bottom: 4rem
+      &--image
+        margin-bottom: 0
+
