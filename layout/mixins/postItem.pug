@@ -1,8 +1,8 @@
 mixin postItem(post)
   if(post)
-    .posts-item
-      - let hasPhoto = theme.posts_item_image && post.photos && post.photos[0]
-      h2(class=hasPhoto ? "h2--sm-mb" : "")
+    - let hasPhoto = post.photos && post.photos[0]
+    .posts-item(class=post.top ? "posts-item--pintop" : "")
+      h2.posts-item__title(class=hasPhoto ? "posts-item__title--image" : "")
         a(href=post.path ? url_for(post.path) : '') #{post.title}
       if hasPhoto
         img.posts-item__image(src=post.photos[0] alt="post image")
