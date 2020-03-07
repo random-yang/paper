@@ -27,7 +27,8 @@ html(lang=config.language)
         sea: "#46b3e6"
       }
     meta(name="theme-color" content=colorMap[theme.main_color])
-    title= getPageTitle()
+    title=getPageTitle()
+    link(rel="shortcut icon" href="/favicon.ico")
     //- stylesheets list from _config.yml
     if theme.stylesheets && theme.stylesheets.length > 0
       each url in theme.stylesheets

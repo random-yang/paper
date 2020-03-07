@@ -57,6 +57,7 @@ social:
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
   Mail: tomail:xxx@yourmail.xxxx
+  Rss: your-rss-link-url
   # ...
   # and more, you can add other link by the same way
 ```
@@ -112,6 +113,14 @@ google_analytics_id: xx-xxxxxxx-xx
 top: true
 ```
 
+- 添加Rss订阅
+
+根据[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)的引导，生成`atom.xml`文件，然后在`themes/paper/_config.yml`中配置
+```bash
+social:
+  - Rss: your-rss-link-url
+```
+
 ## 效果预览
 
 - DarkMode
@@ -145,9 +154,10 @@ git pull
 - [x] 优化[Audit](https://web.dev/measure/)测试性能
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
+- [ ] 图片 zooming
 - [ ] 根据情况看决定否添加评论系统(不是所有的 Blog 都需要评论系统)
 - [ ] 全局搜索
-- [ ] RSS 订阅功能
+- [x] RSS 订阅功能
 - [ ] 优化排版和细分字体
 
 ## 参与
