@@ -4,6 +4,20 @@
 
 ![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
 
+## 目录
+
+- [如何使用](#如何使用)
+  - [安装](#安装)
+  - [配置项](#配置项)
+- [效果预览](#效果预览)
+- [update](#update)
+- [移植版](#移植版)
+- [Todo](#todo)
+- [参与](#参与)
+- [LICENCE](#licence)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## 如何使用
 
 #### 安装
@@ -108,14 +122,16 @@ google_analytics_id: xx-xxxxxxx-xx
 
 - 文章置顶
 
-在文章markdown头部写：
+在文章 markdown 头部写：
+
 ```bash
 top: true
 ```
 
-- 添加Rss订阅
+- 添加 Rss 订阅
 
 根据[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)的引导，生成`atom.xml`文件，然后在`themes/paper/_config.yml`中配置
+
 ```bash
 social:
   - Rss: your-rss-link-url
