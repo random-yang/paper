@@ -145,6 +145,7 @@ git pull
 - [x] 优化[Audit](https://web.dev/measure/)测试性能
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
+- [ ] 图片 zooming
 - [ ] 根据情况看决定否添加评论系统(不是所有的 Blog 都需要评论系统)
 - [ ] 全局搜索
 - [ ] RSS 订阅功能
