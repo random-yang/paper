@@ -70,7 +70,7 @@ social:
   twitter: https://twitter.com/yours
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
-  Mail: tomail:xxx@yourmail.xxxx
+  Mail: mailto:xxx@yourmail.xxxx
   Rss: your-rss-link-url
   # ...
   # and more, you can add other link by the same way
