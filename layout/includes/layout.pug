@@ -28,7 +28,7 @@ html(lang=config.language)
       }
     meta(name="theme-color" content=colorMap[theme.main_color])
     title=getPageTitle()
-    link(rel="shortcut icon" href="/favicon.ico")
+    link(rel="shortcut icon" href= config.favicon || "/favicon.ico")
     //- stylesheets list from _config.yml
     if theme.stylesheets && theme.stylesheets.length > 0
       each url in theme.stylesheets
@@ -41,7 +41,10 @@ html(lang=config.language)
     if theme.scripts_defer && theme.scripts_defer.length > 0
       each url in theme.scripts_defer
         script(src=url defer)
-    include ./google-analytics
+
+    include ./google-analytics-script
+    include ./comments-script
+    include ./toc-script
 
   body
     .mask-border
@@ -51,6 +54,7 @@ html(lang=config.language)
     include ./footer
     include ./darkmode-mask
     .sidebar__button
+
 
 
 

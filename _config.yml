@@ -1,6 +1,6 @@
 
 # html lang
-language: en
+language: zh
 
 # main menu navigation
 menu:
@@ -19,10 +19,8 @@ stylesheets_preload:
 
 # scripts loaded in the end of the body
 scripts_defer:
-- https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js #for toc
 - https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js # for highlight
 - /js/paper.js # for basic script
-- /js/toc.js # for toc render
 
 
 social:
