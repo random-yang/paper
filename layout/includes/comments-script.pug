@@ -1,0 +1,15 @@
+if page.content
+  script(src="https://www.unpkg.com/valine/dist/Valine.min.js" defer)
+  script.
+    window.addEventListener('DOMContentLoaded', () => {
+      new Valine({
+        el: '#comments',
+        appId: '1JY5EfOoNSaiEGcXhwrCs7dk-gzGzoHsz',
+        appKey: 'jXutXUNavOPDp92k9gQuMsv9',
+        notify:false,
+        verify:false,
+        avatar:'mp',
+        placeholder: '说几句',
+        visitor: true
+      })
+    })

@@ -70,7 +70,7 @@ social:
   twitter: https://twitter.com/yours
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
-  Mail: tomail:xxx@yourmail.xxxx
+  Email: tomail:xxx@yourmail.xxxx
   Rss: your-rss-link-url
   # ...
   # and more, you can add other link by the same way
@@ -170,10 +170,10 @@ git pull
 - [x] 优化[Audit](https://web.dev/measure/)测试性能
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
-- [ ] 图片 zooming
-- [ ] 根据情况看决定否添加评论系统(不是所有的 Blog 都需要评论系统)
-- [ ] 全局搜索
 - [x] RSS 订阅功能
+- [ ] 图片 zooming
+- [ ] ~~根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)~~
+- [ ] 全局搜索
 - [ ] 优化排版和细分字体
 
 ## 参与

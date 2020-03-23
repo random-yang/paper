@@ -1,0 +1,17 @@
+if page.content
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" defer)
+  script.
+    window.addEventListener('DOMContentLoaded', () => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.toc__content',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.article__content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4, h5, h6',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+        orderedList: false,
+        collapseDepth: 2,
+      });
+    })
