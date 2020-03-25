@@ -36,6 +36,8 @@ html(lang=config.language)
     if theme.stylesheets_preload && theme.stylesheets_preload.length > 0
       each url in theme.stylesheets_preload
         link(rel='preload' href=url as='style' onload="this.onload=null;this.rel='stylesheet'")
+        //- for which is not support preload function
+        link(rel='stylesheet' href=url)
 
     //- scripts list from _config.yml
     if theme.scripts_defer && theme.scripts_defer.length > 0
