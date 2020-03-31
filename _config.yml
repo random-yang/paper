@@ -6,8 +6,6 @@ language: zh
 menu:
   Home: /
   About: /about
-  Contact: /contact
-  Archives: /archives
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -45,3 +43,13 @@ main_color: default # forest | grass | sky | sun | sea
 
 # google Analytics
 google_analytics_id: xx-xxxxxxx-xx
+
+# commend module
+comment:
+  enable: false
+  appId: your-app-id
+  appKey: your-app-key
+  placeholder: say something
+  notify: false
+  verify: false
+  avatar: mp
