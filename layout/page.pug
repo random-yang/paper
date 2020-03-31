@@ -1,5 +1,13 @@
 extends ./includes/layout.pug
+include ./mixins/postItem.pug
+include ./mixins/horizontalLine.pug
 
 block content
-  .page-view
-    include includes/main.pug
+  .page
+    include ./includes/location-bar.pug
+    .main__2-col
+      article.post-view__article
+        .article__content
+          != page.content
+      .post-view__sidebar
+        include includes/sidebar.pug

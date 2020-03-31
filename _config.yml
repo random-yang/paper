@@ -6,12 +6,10 @@ language: zh
 menu:
   Home: /
   About: /about
-  Contact: /contact
-  Archives: /archives
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/index.css # for main css
+
 stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
@@ -45,3 +43,13 @@ main_color: default # forest | grass | sky | sun | sea
 
 # google Analytics
 google_analytics_id: xx-xxxxxxx-xx
+
+# commend module
+comment:
+  enable: false
+  appId: your-app-id
+  appKey: your-app-key
+  placeholder: say something
+  notify: false
+  verify: false
+  avatar: mp

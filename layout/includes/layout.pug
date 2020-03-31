@@ -29,15 +29,9 @@ html(lang=config.language)
     meta(name="theme-color" content=colorMap[theme.main_color])
     title=getPageTitle()
     link(rel="shortcut icon" href= config.favicon || "/favicon.ico")
-    //- stylesheets list from _config.yml
-    if theme.stylesheets && theme.stylesheets.length > 0
-      each url in theme.stylesheets
-        link(rel='stylesheet' href=url)
-    if theme.stylesheets_preload && theme.stylesheets_preload.length > 0
-      each url in theme.stylesheets_preload
-        link(rel='preload' href=url as='style' onload="this.onload=null;this.rel='stylesheet'")
-        //- for which is not support preload function
-        link(rel='stylesheet' href=url)
+
+    //- this stylesheet mush (download -> parse) before any scripts
+    link(rel="stylesheet" href="/css/index.css")
 
     //- scripts list from _config.yml
     if theme.scripts_defer && theme.scripts_defer.length > 0
@@ -47,6 +41,17 @@ html(lang=config.language)
     include ./google-analytics-script
     include ./comments-script
     include ./toc-script
+
+    //- these stylesheet won't block the scripts's download
+    //- stylesheets list from _config.yml
+    if theme.stylesheets && theme.stylesheets.length > 0
+      each url in theme.stylesheets
+        link(rel='stylesheet' href=url)
+    if theme.stylesheets_preload && theme.stylesheets_preload.length > 0
+      each url in theme.stylesheets_preload
+        link(rel='preload' href=url as='style' onload="this.onload=null;this.rel='stylesheet'")
+        //- for which not support preload function
+        link(rel='stylesheet' href=url)
 
   body
     .mask-border
