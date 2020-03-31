@@ -137,6 +137,20 @@ social:
   - Rss: your-rss-link-url
 ```
 
+- 评论模块配置
+
+```bash
+# commend module
+comment:
+  enable: false # true to enable
+  appId: your-app-id
+  appKey: your-app-key
+  placeholder: say something
+  notify: false
+  verify: false
+  avatar: mp
+```
+
 ## 效果预览
 
 - DarkMode
