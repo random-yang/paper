@@ -31,20 +31,23 @@ article.post-view__article
       border-left: 2px solid $color-black-2
       padding: 0em 2rem
 
-    code
-      .gutter
-        width: 2em
-        text-align: center
-        color: $color-white
-        background: $color-gray
+    .gutter
+      width: 3em
+      text-align: center
+      background: #f8f8f8
+      border-right: 1px solid $color-light-gray !important
 
     code.hljs
       text-size(s-1)
       width: 100%
       overflow-x: scroll
       max-width: 80rem
-      margin: 2rem 0
       padding: 0.5em 1em
+      margin: 1em 0
+
+    table
+      code.hljs
+        margin: 0
 
     code:not(.hljs)
       text-size(s-1)
@@ -68,7 +71,19 @@ article.post-view__article
       max-width: 100%
       margin: 2rem 0
 
+    .highlight
+      table
+        width: 100%
+        border: none
+        table-layout: fixed
+        overflow: auto
+        border
+        th,td
+          border: none
+          padding: 0
+
     table
+      margin: 2rem 0
       border-spacing: 0
       border-collapse: collapse
       border-top: 2px $color-black-2 solid
