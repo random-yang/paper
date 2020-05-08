@@ -24,7 +24,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ```bash
 # 在你的 hexo 顶层文件夹下
-cd theme
+cd themes
 # clone 该项目
 git clone git@github.com:random-yang/paper.git
 ```
