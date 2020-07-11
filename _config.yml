@@ -13,7 +13,6 @@ stylesheets:
 stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
-- https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css # for toc basic style
 
 # scripts loaded in the end of the body
 scripts_defer:

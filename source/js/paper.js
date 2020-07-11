@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let toggle = true
     const sidebar = document.querySelector('.sidebar')
     const sidebarButton = document.querySelector('.sidebar__button')
-    sidebarButton.addEventListener('click', function() {
+    sidebarButton && sidebarButton.addEventListener('click', function() {
       toggle
         ? sidebar.classList.add('sidebar--expend')
         : sidebar.classList.remove('sidebar--expend')
