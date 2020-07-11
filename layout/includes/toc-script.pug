@@ -1,5 +1,6 @@
 if page.content
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" defer)
+  link(rel='stylesheet' href='/css/tocbot.css')
+  script(src="/js/tocbot.js" defer)
   script.
     window.addEventListener('DOMContentLoaded', () => {
       tocbot.init({
