@@ -52,16 +52,18 @@
       width: 3rem
       height 3rem
       background: $color-main
-      background-image: url(../../img/icon-expend.svg)
-      background-position: center
-      background-size: contain
+      background-image: url(../../img/icon-menu-sprite.svg)
+      background-position: center 100% 
+      background-size: 100% auto
       background-repeat: no-repeat
       position: fixed
       top: 0.8rem
       right: 3rem
       z-index: 5
+      transition: background-position 0.3s ease-out
       &--expend
-        background-image: url(../../img/icon-close.svg)
+        background-position: center 0
+
 
 
 
