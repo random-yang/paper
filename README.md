@@ -151,6 +151,35 @@ comment:
   avatar: mp
 ```
 
+- 开启数学公式
+
+1. 卸载 hexo-math
+```bash
+npm uninstall hexo-math
+```
+2. 卸载 hexo-renderer-marked
+```bash
+npm uninstall hexo-renderer-marked
+```
+3. 安装 hexo-renderer-kramed
+```bash
+npm install hexo-renderer-kramed --save
+```
+4. 更新 _config.yml
+```bash
+# 添加
+math:
+  engine: 'mathjax'
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+```
+5. 最后
+```
+hexo clean
+hexo server
+```
+
 ## 效果预览
 
 - DarkMode
@@ -185,9 +214,9 @@ git pull
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
 - [x] RSS 订阅功能
-- [x] 根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)
-- [ ] 导航栏模块
+- [x] Latex
 - [ ] 图片 zooming
+- [x] 根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)
 - [ ] 全局搜索
 - [ ] 优化排版和细分字体
 

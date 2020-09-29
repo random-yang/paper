@@ -99,6 +99,21 @@ article.post-view__article
       td:first-child,th:first-child
         border-left: none
 
+    // latex
+    .mjx-chtml
+      font-size: $font-size-s-2;
+
 @media screen and (max-width: $M)
   .post-view__article
     padding: 0rem 1rem 6rem 1rem
+    .article__content
+      .mjx-chtml
+        font-size: $font-size-s-1;
+
+@media screen and (max-width: $S)
+  article.post-view__article
+    .article__content
+      .mjx-chtml
+        font-size: $font-size-s-0;
+
+
