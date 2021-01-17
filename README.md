@@ -5,7 +5,7 @@
 ![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
 
 <p align='center'>
-简体中文 ｜ <a href="https://github.com/random-yang/paper/edit/master/README.en.md">English</a>
+简体中文 ｜ <a href="https://github.com/random-yang/paper/blob/master/README.en.md">English</a>
 </p>
 
 ## 目录
