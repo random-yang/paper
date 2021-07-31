@@ -126,7 +126,7 @@ google_analytics_id: xx-xxxxxxx-xx
 
 - 文章置顶
 
-在文章 markdown 头部写：
+首先，在项目中安装 [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) 依赖，然后在文章 markdown 头部写：
 
 ```bash
 top: true
