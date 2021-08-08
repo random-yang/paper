@@ -1,4 +1,11 @@
 .sidebar
+  if theme.profile === undefined || theme.profile === true
+    h2 About me
+    .sidebar__profile
+      a(href=theme.menu.About)
+        img(src='/images/profile.jpg' alt="profile")
+      //- a(href=theme.menu.About)  #{config.title}
+
   //- 默认参数 true
   if !page.posts && (theme.toc === undefind || theme.toc === true)
     include ./toc

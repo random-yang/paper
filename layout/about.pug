@@ -1,0 +1,25 @@
+extends ./includes/layout.pug
+include ./mixins/postItem.pug
+include ./mixins/horizontalLine.pug
+
+
+block content
+  .main
+    include ./includes/location-bar.pug
+    .main__2-col
+      article.post-view__article
+        .article__infomation
+          - const post = { date: page.date, title: page.title, path: ''}
+          +postItem(post)
+        .article__content
+          != page.content
+      .post-view__sidebar
+        include includes/sidebar.pug
+    +horizontalLine('1px')
+    .main__bottom
+      .back-to-home 
+        a.home-button(href=url_for(theme.Home)) Home
+      if page.content && theme.comment && theme.comment.enable
+        #comments
+
+
