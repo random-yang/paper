@@ -6,7 +6,8 @@
 -     if (is_category()) pageTitle = 'Category: ' + page.category
 -     if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 -     if (is_year()) pageTitle += ': ' + page.year
--     pageTitle += ' [ ' + config.title + ' ] '
+-     if (pageTitle == '') return config.title
+-      pageTitle += ' - ' + config.title
 -     return pageTitle
 - }
 
@@ -57,7 +58,6 @@ html(lang=config.language)
         script(src=url defer)
 
     include ./scripts/google-analytics-script
-    include ./scripts/comments-script
     include ./scripts/toc-script
     include ./scripts/math-script
 

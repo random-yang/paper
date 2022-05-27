@@ -1,0 +1,14 @@
+#comments
+script(src="https://www.unpkg.com/valine/dist/Valine.min.js" defer)
+script.
+  window.addEventListener('DOMContentLoaded', () => {
+    new Valine({
+      el: '#comments',
+      appId: '#{theme.comment.appId}',
+      appKey: '#{theme.comment.appKey}',
+      notify: #{theme.comment.notify},
+      verify: #{theme.comment.notify},
+      avatar: '#{theme.comment.avatar}',
+      placeholder: '#{theme.comment.placeholder}',
+    })
+  })
