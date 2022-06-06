@@ -11,8 +11,8 @@
 ## 目录
 
 - [如何使用](#如何使用)
-  - [安装](#安装)
-  - [配置项](#配置项)
+    - [安装](#安装)
+    - [配置项](#配置项)
 - [效果预览](#效果预览)
 - [update](#update)
 - [移植版](#移植版)
@@ -144,15 +144,23 @@ social:
 - 评论模块配置
 
 ```bash
-# commend module
+# comment module
 comment:
-  enable: false # true to enable
+  enable: false
+  type: valine # valine | utterances
+
+  # valine 需要的参数
   appId: your-app-id
   appKey: your-app-key
   placeholder: say something
   notify: false
   verify: false
   avatar: mp
+
+  # utterances (https://utteranc.es/) 需要的参数
+  repo: your-repo-name
+  issue_term: your-issue-term
+  theme: your-comment-theme
 ```
 
 - 开启数学公式

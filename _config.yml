@@ -43,12 +43,20 @@ main_color: default # forest | grass | sky | sun | sea
 # google Analytics
 google_analytics_id: xx-xxxxxxx-xx
 
-# commend module
+# comment module
 comment:
   enable: false
+  type: valine # valine | utterances
+
+  # valine 需要的参数
   appId: your-app-id
   appKey: your-app-key
   placeholder: say something
   notify: false
   verify: false
   avatar: mp
+
+  # utterances (https://utteranc.es/) 需要的参数
+  repo: your-repo-name
+  issue_term: your-issue-term
+  theme: your-comment-theme

@@ -6,14 +6,14 @@
 
 ## Table of Contents
 
-- [How to use](#How to use)
-  - [Install](#Install)
-  - [Configuration Item](#Configuration Item)
-- [Effect Preview](#Effect Preview)
-- [update](#update)
-- [Portable Version](#Portable Version)
+- [How to use](#how-to-use)
+    - [Installation](#installation)
+    - [Configuration items](#configuration-items)
+- [Effect preview](#effect-preview)
+- [Update](#update)
+- [Porting version](#porting-version)
 - [Todo](#todo)
-- [Participation](#Participation)
+- [Participate](#participate)
 - [LICENCE](#licence)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
@@ -140,15 +140,23 @@ social:
 - Comment module configuration
 
 ```bash
-# Commend module
+# comment module
 comment:
   enable: false # true to enable
+  type: valine # value: valine | utterances
+
+  # valine params
   appId: your-app-id
   appKey: your-app-key
   placeholder: say something
   notify: false
   verify: false
   avatar: mp
+
+  # utterances (https://utteranc.es/) params
+  repo: your github repo path which supports comment
+  issue_term: your issue term
+  theme: comment theme
 ```
 
 - Open math formula
